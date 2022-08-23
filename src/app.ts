@@ -1,8 +1,6 @@
 import express, {Application} from 'express'
+import { applyRoutes } from './Routes'
 
 export const app: Application = express()
 
-app.use('/',(req,res)=>{
-
-    res.send({msg:"Hello world"})
-})  
+app.use(applyRoutes())  
