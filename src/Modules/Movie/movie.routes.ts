@@ -9,16 +9,9 @@ export const PublicMovieRoutes = (router: Router, prefix: string) => {
 
 export const AdminMovieRoutes = (router: Router, prefix: string) => {
 
-    // TODO: add insert, update and delete to admin
-
     router
         .route(`${prefix}/movies`)
-        .get(
-            AdminMovieController.index
-        )
-        // .post(
-        //     AdminMovieController.store
-        // )
+        .get(AdminMovieController.index)
 
     router
         .route(`${prefix}/movies/:id`)

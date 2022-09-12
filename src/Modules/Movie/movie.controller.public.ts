@@ -3,11 +3,6 @@ import Movie                             from './movie.model'
 
 export const PublicMovieController = {
 
-    /**
-     * ---------------------------------------------------------------------
-     * View index of a model
-     * ---------------------------------------------------------------------
-     */
     index: async (req: Request, res: Response, next: NextFunction) => {
 
         await Movie
@@ -17,11 +12,7 @@ export const PublicMovieController = {
             .catch(err => next(err))
     },
 
-    /**
-     * ---------------------------------------------------------------------
-     * View a single model
-     * ---------------------------------------------------------------------
-     */
+
     show: async (req: Request, res: Response, next: NextFunction) => {
 
         await Movie
